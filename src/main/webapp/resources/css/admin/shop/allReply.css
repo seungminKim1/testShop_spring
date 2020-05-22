@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#container_box ul li {
+	margin-bottom : 20px;
+	border : 10px solid #eee;
+}
+.replyInfo {
+	background : #eee;
+	padding : 10px;
+	font-size : 18px;
+}
+.replyInfo span {
+	font-size : 20px;
+	font-weight : bold;
+	margin-right : 20px;
+}
+.replyContent {
+	padding : 10px;
+}
+
+.replyControl {
+	text-align : right;
+	padding : 10px;
+}
+.replyControl button {
+	border : 2px solid #999;
+	background : #fff;
+}

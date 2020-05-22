@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.orderInfo {
+	border : 5px solid #eee;
+	padding : 10px 20px;
+	margin : 20px 0;
+}
+.orderInfo span {
+	font-size : 20px;
+	font-weight : bold;
+	display : inline-block;
+	width : 90px;
+}
+
+.orderView li {
+	margin-bottom : 20px;
+	padding-bottom : 20px;
+	border-bottom : 1px solid #999;
+}
+.orderView li::after {
+	content : "";
+	display : block;
+	clear : both;
+}
+
+.thumb {
+	float : left;
+	width : 200px;
+}
+.thumb img {
+	width : 200px;
+	height : 200px;
+}
+.gdsInfo {
+	float : right;
+	width : calc(100% - 220px);
+	line-height : 2;
+}
+.gdsInfo span {
+	font-size : 20px;
+	font-weight : blod;
+	display : inline-block;
+	width : 100px;
+	margin-right : 10px;
+}
