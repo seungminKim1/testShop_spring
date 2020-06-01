@@ -50,5 +50,7 @@
     * 전반적인 CSS는 bootstrap을 이용했다.
     * 이번 프로젝트는 spring의 내장된 Spring-security의 Bcrypt, handlerInterceptorAdaptor 에 대해 처음 접해보고 공부가 된 계기가 되었다.
     * 상품 등록시 상세정보에 대한 내용작성을 ckeditor를 적용 해보았다.
+    * 상품 등록 및 수정시 이미지 업로드,썸네일 생성을 할 때 thumbnailator를 이용했다.
     * ajax, Jquery, Jstl 에 대한 다양한 사용법을 공부하게 되었다.
     * 카카오의 우편번호API를 사용해 보았다.
+    
