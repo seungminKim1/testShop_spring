@@ -1,0 +1,21 @@
+@charset "UTF-8";
+#content {
+	text-align: center;
+	padding-right : 250px;
+}
+
+.inputArea {
+	margin : 10px 0;
+}
+select {
+	width : 100px;
+}
+label {
+	display : inline-block;
+	width : 70px;
+	padding : 5px;
+}
+input {
+	width: 150px;
+}
+

@@ -133,4 +133,10 @@ public class ShopDAOImpl implements ShopDAO {
 		return sql.selectList(namespace + ".orderView",order);
 	}
 
+	@Override
+	public int countGoods() throws Exception {
+		// TODO Auto-generated method stub
+		return sql.selectOne(namespace + ".countGoods");
+	}
+
 }

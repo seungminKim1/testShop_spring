@@ -5,10 +5,17 @@
 <html>
 <head>
 	<title>Test</title>
-	<link rel = "stylesheet" href = "/resources/css/home/home.css">
+	<!-- css -->
+	<link rel = "stylesheet" href = "/resources/css/admin/index/index.css">
 	<link rel = "stylesheet" href = "/resources/css/shop/cartList.css">
 	
+	<!-- jquery -->
 	<script src="/resources/jquery/jquery-3.3.1.min.js"></script>
+	
+	<!-- bootstrap --> 
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css">
+	<script src="/resources/bootstrap/bootstrap.min.js"></script>
 	
 </head>
 <body>

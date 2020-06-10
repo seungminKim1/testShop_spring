@@ -1,19 +1,27 @@
 @charset "UTF-8";
 
+#content {
+	padding : 0 250px;
+}
+
 /*상품영역*/
+div.goods {
+	display : inline-block;
+}
 div.goods div.goodsImg {
 	float : left;
 	width : 350px;
 }
 div.goods div.goodsImg img {
 	width : 350px;
-	height : auto;
+	height : 350px;
 }
 
 div.goods div.goodsInfo {
 	float : right;
-	width : 330px;
+	width : 400px;
 	font-size : 22px;
+	padding: 0 25px;
 }
 div.goods div.goodsInfo p {
 	margin : 0 0 20px 0;

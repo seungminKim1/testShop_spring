@@ -5,7 +5,6 @@
 <html>
 <head>
 	<title>Test</title>
-<!-- 	<link rel = "stylesheet" href = "/resources/css/home/home.css"> -->
 	<link rel = "stylesheet" href = "/resources/css/shop/list.css">
 	
 	<link rel = "stylesheet" href = "/resources/css/admin/index/index.css">
@@ -48,6 +47,13 @@
 						</div>
 					</li>
 					</c:forEach>
+					<div>
+						<c:forEach items = "${pag}" begin = "1" end = "5" step = "1" var="pag">
+							<a href="/shop/list?c=${cateCode }&l=${level}&p=${pag}">${pag }</a>		
+						</c:forEach>
+					</div>
+					<a href="/shop/list?c=${cateCode }&l=${level}&p=2">2</a>
+					<a href="/shop/list?c=${cateCode }&l=${level}&p=9">9</a>
 				</ul>
 			</section>
 			

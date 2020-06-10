@@ -73,9 +73,6 @@
 					<tr>
 						<th>아이디</th>
 						<th>이름</th>
-						<th>우편번호</th>
-						<th>주소</th>
-						<th>상세주소</th>
 						<th>가입일</th>
 						<th>권한</th>
 					</tr>
@@ -85,10 +82,7 @@
 						<tr>
 							<td>${memberList.userId }</td>
 							<td>${memberList.userName }</td>
-							<td>${memberList.userAddr1 }</td>
-							<td>${memberList.userAddr2 }</td>
-							<td>${memberList.userAddr3 }</td>
-							<td>${memberList.regiDate }</td>
+							<td><fmt:formatDate pattern="yyyy-MM-dd" value="${memberList.regiDate }"/></td>
 							
 							<c:choose>
 								<c:when test="${memberList.verify == 9 }">

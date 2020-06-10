@@ -110,6 +110,12 @@ public class AdminServiceImpl implements AdminService{
 		// TODO Auto-generated method stub
 		return dao.memberList();
 	}
+
+	@Override
+	public int countGoods() throws Exception {
+		// TODO Auto-generated method stub
+		return dao.countGoods();
+	}
 	
 
 }

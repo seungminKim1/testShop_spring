@@ -150,4 +150,12 @@ from TBL_ORDER o
 
 </select>
 
+<!-- 상품 총 갯수(페이징) -->
+<select id="countGoods" resultType = "Int">
+select 
+	count(*)
+from 
+	TBL_GOODS
+</select>
+
 </mapper>

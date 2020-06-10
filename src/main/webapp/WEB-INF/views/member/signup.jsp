@@ -6,7 +6,8 @@
 	<title>Test</title>
 	
 	<!-- css -->
-	<link rel = "stylesheet" href = "/resources/css/home/home.css">
+	<link rel = "stylesheet" href = "/resources/css/admin/index/index.css">
+	<link rel = "stylesheet" href = "/resources/css/member/signup.css">
 	
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
@@ -49,8 +50,8 @@
 					</div>
 					
 					<div class="input_area">
-						<label for="userName">닉네임</label>
-						<input type="text" id="userName" name="userName" placeholder="닉네임을 입력해주세요" required="required" />
+						<label for="userName">이름</label>
+						<input type="text" id="userName" name="userName" placeholder="이름을 입력해주세요" required="required" />
 					</div>
 					
 					<div class="input_area">
@@ -58,7 +59,7 @@
 						<input type="text" id="userPhon" name="userPhon" placeholder="연락처를 입력해주세요" required="required" />
 					</div>
 					
-					<button type="submit" id="signup_btn" name="signup_btn">회원가입</button>
+					<button type="submit" id="signup_btn" class="btn btn-primary" name="signup_btn">회원가입</button>
 				</form>
 			</section>
 			

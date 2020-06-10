@@ -102,5 +102,10 @@ public class AdminDAOImpl implements AdminDAO {
 		// TODO Auto-generated method stub
 		return sql.selectList(namespace + ".memberList");
 	}
+	@Override
+	public int countGoods() throws Exception {
+		// TODO Auto-generated method stub
+		return sql.selectOne(namespace + ".countGoods") ;
+	}
 	
 }

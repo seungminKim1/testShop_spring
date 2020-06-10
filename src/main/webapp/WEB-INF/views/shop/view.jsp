@@ -4,10 +4,16 @@
 <html>
 <head>
 	<title>Test</title>
-	<link rel = "stylesheet" href = "/resources/css/home/home.css">
+	<!-- css -->
+	<link rel = "stylesheet" href = "/resources/css/admin/index/index.css">
 	<link rel = "stylesheet" href = "/resources/css/shop/view.css">
 	
 	<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css">
+	<script src="/resources/bootstrap/bootstrap.min.js"></script>
 	
 	<!-- ajax 댓글리스트 -->
 	<script>

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,7 @@ import com.test.domain.OrderVO;
 import com.test.domain.ReplyListVO;
 import com.test.domain.ReplyVO;
 import com.test.service.ShopService;
+import com.test.utils.Paginations;
 
 @Controller
 @RequestMapping(value = "/shop/*")
@@ -36,17 +38,41 @@ public class ShopController {
 	@Inject
 	ShopService service;
 	
+	
 	//카테고리별 상품 서비스
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public void getList(@RequestParam("c") int cateCode,
-						@RequestParam("l") int level, Model model) throws Exception {
+						@RequestParam("l") int level,
+						@RequestParam("p") int page, Model model) throws Exception {
 		
 		Logger.info("get shop list");
 		
 		List<GoodsViewVO> list = null;
 		list = service.list(cateCode,level);
-				
+		
+		model.addAttribute("cateCode",cateCode);
+		model.addAttribute("level",level);
 		model.addAttribute("list",list);
+		
+		
+		Paginations pag = new Paginations();
+		pag.setTotalCount(service.countGoods());
+		pag.setCurrentPage(page);
+		pag.setCurrentBlock(pag.getPageSize(),pag.getCurrentPage());
+		pag.calTotalPage(pag.getTotalCount(), pag.getPostSize());
+		pag.calTotalBlock(pag.getTotalPage(), pag.getPageSize());
+		pag.calBtn(pag.getCurrentBlock());
+		
+		model.addAttribute("pag",pag);
+		
+		
+		System.out.println("++++++++++++++++++ totalCount : "+pag.getTotalCount() + "+++++++++++++++++++" );
+		System.out.println("++++++++++++++++++ currentPage : "+pag.getCurrentPage()+ "+++++++++++++++++++" );
+		System.out.println("++++++++++++++++++ totalPageSize : "+pag.getTotalPage()+ "+++++++++++++++++++" );
+		System.out.println("++++++++++++++++++ totalBlockSize : "+pag.getTotalBlockSize()+ "+++++++++++++++++++" );
+		System.out.println("++++++++++++++++++ currentBlock : "+pag.getCurrentBlock()+ "+++++++++++++++++++" );
+		System.out.println("++++++++++++++++++ prevBtn : "+pag.isPrevBtn()+ "+++++++++++++++++++" );
+		System.out.println("++++++++++++++++++ nextBtn : "+pag.isNextBtn()+ "+++++++++++++++++++" );
 		
 	}
 	
@@ -57,6 +83,11 @@ public class ShopController {
 		
 		GoodsViewVO view = service.goodsView(gdsNum);
 		model.addAttribute("view", view);
+		
+		Paginations pag = new Paginations();
+		pag.setTotalCount(service.countGoods());
+		
+		System.out.println("++++++++++++++++++ totalCount : "+pag.getTotalCount() + "+++++++++++++++++++" );
 		
 		/*
 		List<ReplyListVO> reply = service.replyList(gdsNum);

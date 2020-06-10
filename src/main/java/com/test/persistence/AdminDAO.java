@@ -50,4 +50,7 @@ public interface AdminDAO {
 	
 	//회원 목록
 	public List<MemberVO> memberList() throws Exception;
+	
+	//상품 총 갯수(페이징)
+	public int countGoods() throws Exception;
 }

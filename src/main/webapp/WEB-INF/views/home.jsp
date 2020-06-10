@@ -3,13 +3,27 @@
 <html>
 <head>
 	<title>Test</title>
-	<!--  <link rel = "stylesheet" href = "/resources/css/home/home.css">-->
+	<!-- css -->
 	<link rel = "stylesheet" href = "/resources/css/admin/index/index.css">
-
+	
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css">
 	<script src="/resources/bootstrap/bootstrap.min.js"></script>
+	
+	<style>
+	section#containber {
+		height : 80%;
+	}
+	.jumbotron {
+		text-shadow: black 0.2em 0.2em 0.2em;
+		color : white !important;
+		background-image: url('/resources/images/background.png');
+		background-size: cover;
+		height : 100%;
+	}
+	</style>
+	
 </head>
 <body>
 <div id="root">
@@ -32,6 +46,9 @@
 		</aside>
 	
 		<div id="container_box">
+			<div class="jumbotron">
+				<h1 class="text-center">어서오세요 환영합니다.</h1>
+			</div>
 		</div>
 		
 	</section>

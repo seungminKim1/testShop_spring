@@ -6,12 +6,14 @@
 	<title>Test</title>
 	
 	<!-- css -->
-	<link rel="stylesheet" href="/resources/css/home/home.css">
+	<link rel="stylesheet" href="/resources/css/admin/index/index.css">
+	
+	<link rel="stylesheet" href="/resources/css/member/signin.css">
 	
 	<!-- bootstrap --> 
-<!-- 	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css"> -->
-<!-- 	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css"> -->
-<!-- 	<script src="/resources/bootstrap/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css">
+	<script src="/resources/bootstrap/bootstrap.min.js"></script>
 	
 </head>
 <body>
@@ -38,17 +40,17 @@
 			
 			<section id="content">
 				<form role="form" method="post" autocomplete="off">
-					<div class="input_area">
+					<div class="inputArea">
 						<label for="userId">아이디</label>
 						<input type="email" id="userId" name="userId" placeholder="example@email.com" required="required" />
 					</div>
 					
-					<div class="input_area">
+					<div class="inputArea">
 						<label for="userPass">패스워드</label>
 						<input type="password" id="userPass" name="userPass" required="required" />
 					</div>
 		
-					<button type="submit" id="signin_btn" name="signup_btn">로그인</button>
+					<button type="submit" id="signin_btn" class="btn btn-primary" name="signup_btn">로그인</button>
 					
 					<c:if test="${msg == false }">
 						<p style="color:#f00">로그인에 실패했습니다.</p>

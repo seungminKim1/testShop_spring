@@ -14,6 +14,19 @@
 	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css">
 	<script src="/resources/bootstrap/bootstrap.min.js"></script>
 	
+	<style>
+	section#containber {
+		height : 80%;
+	}
+	.jumbotron {
+		text-shadow: black 0.2em 0.2em 0.2em;
+		color : white !important;
+		background-image: url('/resources/images/background.png');
+		background-size: cover;
+		height : 100%;
+	}
+	</style>
+	
 </head>
 <body>
 <div id="root">
@@ -36,7 +49,9 @@
 		</aside>
 		
 		<div id="container_box">
-			
+			<div class = "jumbotron">
+				<h1 class="text-center">관리자 화면 입니다.</h1>
+			</div>
 		</div>
 		
 	</section>

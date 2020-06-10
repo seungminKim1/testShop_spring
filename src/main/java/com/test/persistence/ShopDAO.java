@@ -58,7 +58,11 @@ public interface ShopDAO {
 	//주문 목록
 	public List<OrderVO> orderList(OrderVO order) throws Exception;
 	
-	
 	//특정 주문 목록
 	public List<OrderListVO> orderView(OrderVO order) throws Exception;
+	
+	//상품 전체 갯수(페이징)
+	public int countGoods() throws Exception; 
+	
+	
 }

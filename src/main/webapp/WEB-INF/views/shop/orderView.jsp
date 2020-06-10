@@ -5,8 +5,14 @@
 <html>
 <head>
 	<title>Test</title>
-	<link rel = "stylesheet" href = "/resources/css/home/home.css">
-	<link rel = "stylesheet" href = "/resouces/css/shop/orderView.css">
+	<!-- css -->
+	<link rel = "stylesheet" href = "/resources/css/admin/index/index.css">
+	<link rel = "stylesheet" href = "/resources/css/shop/orderView.css">
+	
+	<!-- bootstrap --> 
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/resources/bootstrap/bootstrap-theme.min.css">
+	<script src="/resources/bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="root">
