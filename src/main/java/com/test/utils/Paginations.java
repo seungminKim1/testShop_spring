@@ -2,9 +2,8 @@ package com.test.utils;
 
 public class Paginations {
 	int totalCount; //게시물 총 갯수
-	int postSize = 5;   //표시 할 게시물 수
-	int pageSize = 5;   //표시 할 페이지 수
 	int currentPage; //현재 페이지 
+	int postSize = 5;   //표시 할 게시물 수
 	int totalPage; //총 페이지 수
 	int currentBlock;  //현재 블럭 
 	int totalBlockSize; //총 블럭 수
@@ -57,12 +56,6 @@ public class Paginations {
 	}
 	public void setPostSize(int postSize) {
 		this.postSize = postSize;
-	}
-	public int getPageSize() {
-		return pageSize;
-	}
-	public void setPageSize(int pageSize) {
-		this.pageSize = pageSize;
 	}
 	public int getCurrentPage() {
 		return currentPage;

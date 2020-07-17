@@ -58,9 +58,9 @@ public class ShopController {
 		Paginations pag = new Paginations();
 		pag.setTotalCount(service.countGoods());
 		pag.setCurrentPage(page);
-		pag.setCurrentBlock(pag.getPageSize(),pag.getCurrentPage());
+		//pag.setCurrentBlock(pag.getPageSize(),pag.getCurrentPage());
 		pag.calTotalPage(pag.getTotalCount(), pag.getPostSize());
-		pag.calTotalBlock(pag.getTotalPage(), pag.getPageSize());
+		//pag.calTotalBlock(pag.getTotalPage(), pag.getPageSize());
 		pag.calBtn(pag.getCurrentBlock());
 		
 		model.addAttribute("pag",pag);
